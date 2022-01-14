@@ -7,14 +7,14 @@ body {
     align-items: center;
     justify-content: center;
     top: 0px;
-    /* background-color: blue; */
+    background-color: green;
     overflow: hidden;
     cursor: pointer;
     
     
 }
 .nav-text{
-    color: green;
+    color: yellow;
 }
 .list{
     width: 50%;
