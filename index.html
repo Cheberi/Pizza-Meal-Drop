@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Pizza-Point</title>
 </head>
 <body>
@@ -31,25 +32,60 @@
 
     </section>
 
-    <form class="form-group" id="custom-pizza">
-        <div class="order">
+    <div class="container" id="order">
+        <div class="order-overlay">
+            <div class="text-center" id="Order-now">
+                <h2>Order Here</h2>
+            </div>
+            <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
             <div class="row">
-                <div class="pizza-img">
-                    <div class="card">
-                        <img src="https://pngimg.com/uploads/pizza/pizza_PNG44096.png" class="card-img" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Sizes of pizza</h5>
-                            <p class="card-text">Choose the size of Pizza:</p>
-                            <select required class="form-control" id="size">
-                                <option></option>
-                                <option value="small-pizza">small (500)</option>
-                                <option value="medium-pizza">medium (750)</option>
-                                <option value="large-pizza">large (1000)</option>
-                            </select>
+                <div class="col1">
+                    <form action="">
+                        <label for="select">Select Your Flavor</label>
+                        <select class="browser-default">
+                            <!-- <option selected value="choose">Choose your flavor</option> -->
+                            <option value="Chicken Tikka">Chicken Tikka</option>
+                            <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                            <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                            <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+                            <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                            <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+                        </select>
+                        <label for="select">Select Size</label>
+                        <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                            <option selected value="0">Select size here</option>
+                            <option value="large">Large -- sh. 1200</option>
+                            <option value="medium">Medium -- sh. 850</option>
+                            <option value="small">Small -- sh. 600</option>
+                        </select>
+                        <label for="crust">Choose your favorite Crust!</label>
+                        <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                            <option selected value="0">Select your preferred crust!</option>
+                            <option value="Crispy">Crispy -- sh. 200</option>
+                            <option value="Stuffed">Stuffed -- sh. 150</option>
+                            <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                        </select>
+                        <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage"
+                                name="toppings">
+                            <label class="custom-control-label" for="Sausage">Sausage</label>
                         </div>
-                    </div>
-                </div>
-              
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon"
+                                name="toppings">
+                            <label class="custom-control-label" for="Bacon">Bacon</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms"
+                                name="toppings">
+                            <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+                        </div>
+                        <br><br>
+                        <button type="submit" class="btn btn-orange proceed">Proceed</button>
+    
+                    </form>
+         
   
 </body>
 </html>
