@@ -43,3 +43,12 @@ a{
 }
 
 /* pizza images styles */
+.form-group{
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    align-items: center;
+    text-align: center;
+}
