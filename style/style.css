@@ -4,8 +4,10 @@ body {
 }
 /* navbar styles */
 .navbar{
+    background-image: url('https://pngimg.com/uploads/pizza/pizza_PNG44089.png');
     display: flex;
     align-items: center;
+    padding-bottom: 650px;
     justify-content: center;
     top: 0px;
     background-color: green;
@@ -27,6 +29,17 @@ li{
     padding: 20px 20px;
 }
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
+
+/* about us styles */
+.about{
+    text-align: center;
+}
+.about p{
+    font-size: 20px;
+    font-family:sans-serif ;
+}
+
+/* pizza images styles */
