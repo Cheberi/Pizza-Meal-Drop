@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
 <body>
-    <form class="form-group" id="menu">
+    <form class="form-group" id="menu" 
+    style="background-image: url('images/dinner-for-one-of-wood-fired-pizza-paired-with-cold-beer.jpg'); padding-top: 20px; padding-bottom: 100px;">
         <div class="controls-top text-center" id="menu">
-          <h2>Menu&Order</h2>
+            <div class="header" style="float: left;color: blue;font-size: 25px;">
+                <a href="index.html">Home</a>
+            </div>
+          <h2 class="contol-txt" style="color: white; text-transform: uppercase;">Menu & Order</h2>
         </div>
         <div class="order">
           <div class="row">
@@ -66,7 +74,7 @@
             </div>
           </div>
         </div><br><br>
-        <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Order Here</button>
+        <button type="submit" class="order-button btn btn-dark" id="submit-pizza" style="float: left; ;">Order Here</button>
         <input type="number" id="amount" placeholder="Quantity of pizza" required>
       </form>
       <div class="col-xs-4" id="order">
@@ -83,7 +91,7 @@
     
           </form>
         </div><br>
-        <button type="btn" class="btn btn-dark" id="checkout-btn">Checkout</button><br><br>
+        <button type="btn" class="btn btn-dark" id="checkout-btn" style="background-image: url('images/pizza-3010062.jpg');">Checkout</button><br><br>
         <div id="order-details" class="col-xs-12">
           <ul id="pizza-details">
             <strong>Your order is as follows: </strong>
@@ -93,7 +101,8 @@
         </div>
       </div>
       <br>
-      <div class="container-fluid bg-default" id="contact">
+      <div class="container-fluid bg-default" id="contact"
+      style="text-align: center;">
         <div class="controls-top ">
           <h2>Contact Us</h2>
         </div>
@@ -103,24 +112,32 @@
           <br>
           <div class="col-md-3 text-justify">
             <h3>Customer Care</h3>
-            <p>noelatrixie@gmail.com</p>
-            <p>Tell:0512211900</p>
-            <p>Phone:+25471 434 6654</p>
+            <p>kmctheboy@gmail.com</p>
+            <p>Tell:07693027999</p>
+            <p>Phone:+254713754740</p>
           </div>
           <div class="col-md-3">
             <h3>Location</h3>
             <p>Pizza Perfecto</p>
-            <p>WestSide Mall | Nakuru</p>
-            <p>20100, Nakuru</p>
+            <p>KIlimani | Nairobi</p>
+            <p>01-2639, Nairobi</p>
           </div>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=kilimani&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe><a href="https://fmovies-online.net">fmovies</a>
+        <br><style>.mapouter{position:relative;text-align:right;height:200px;width:200px;}</style>
+        <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:350px;padding-top: 50px;}</style></div></div>
           <div class="col-md-1"></div>
         </div>
         <div class="row">
           <div class="container text-center footer">
-            <p> Pizza Perfecto <br> &copy; 2021</p>
+            <p> Pizza Meal Drop <br> &copy; 2022</p>
           </div>
         </div>
       </div>
     
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+      <script src="js/script.js"></script>
 </body>
 </html>
