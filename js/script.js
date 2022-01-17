@@ -26,17 +26,19 @@ $(document).ready(function() {
         this.pizzaPrice += 150;
       } else if (this.crust === "crispy") {
         this.pizzaPrice += 150;
+      } else if (this.crust === "thin") {
+          this.pizzaPrice +=150;
       }
       if (this.toppings === "pepperoni") {
-        this.pizzaPrice += 100;
+        this.pizzaPrice += 200;
       } else if (this.toppings === "sausage") {
         this.pizzaPrice += 150;
       } else if (this.toppings === "bacon") {
         this.pizzaPrice += 200;
       } else if (this.toppings === "mushrooms") {
-        this.pizzaPrice += 150;
+        this.pizzaPrice += 200;
       } else if (this.toppings === "chicken") {
-        this.pizzaPrice += 150;
+        this.pizzaPrice += 300;
       }
     };
     //Business logic
