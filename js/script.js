@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#order-details").hide();
-    // $("#deliver").hide();
+    $("#deliver").hide();
     // Business Logic
     var totalPriceArray = [];
     class Order {
