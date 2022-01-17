@@ -12,11 +12,11 @@ $(document).ready(function() {
     }
     Order.prototype.pizzaCost = function() {
       if (this.size === "small-pizza") {
-        this.pizzaPrice += 500;
+        this.pizzaPrice += 700;
       } else if (this.size === "medium-pizza") {
-        this.pizzaPrice += 750;
+        this.pizzaPrice += 1200;
       } else if (this.size === "large-pizza") {
-        this.pizzaPrice += 1000;
+        this.pizzaPrice += 1500;
       }
       if (this.crust === "cheese-filled") {
         this.pizzaPrice += 100;
