@@ -3,6 +3,7 @@ body {
 }
 /* navbar styles */
 .navbar{
+    position: sticky;
     display: flex;
     align-items: center;
     padding-bottom: 650px;
